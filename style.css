@@ -1,5 +1,5 @@
 .gradient-background {
-  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background: linear-gradient(300deg, #ff80b0, #ffcd82, #809bff);
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
 }
@@ -17,13 +17,23 @@
 }
 
 #buybtn {
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 #buybtn:hover {
   transform: scale(1.1);
-  background-color: #ff3c52;
-  color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+body, span, h1, h2, h3, h4, h5, h6, p {
+  color: #333!important;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
 }
